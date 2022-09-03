@@ -1,0 +1,126 @@
+:root {
+    --color-main: 209,186,128;
+    --color-white: 233,233,233;
+    --color-black: hsl(0, 0%, 20%);
+    --color-accent: #805959;
+}
+body {
+    position: relative;
+    background-image: url(./media/mock-hero3.jpg);
+    background-size: cover;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    position: fixed;
+    top: 5px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}
+
+header img.logo {
+    max-width: 200px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+}
+
+header .pancake {
+    margin: 0 15px;
+}
+
+header .pancake div:is(.box:first-child, .box:last-child) {
+    margin: 0 1px;
+}
+
+header .pancake .box {
+    background-color: rgba(var(--color-white), 0.6);
+}
+
+header .pancake .content {
+    margin: 8px 20px;
+}
+
+header .pancake .content a {
+    font-family: Prata, serif;
+    font-size: small;
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+header .pancake .box:nth-child(2) a {
+    font-weight: 900;
+    color: #000;
+}
+
+main {
+    padding: 20% 0 20px 15%;
+}
+main.fade-in {
+    animation-delay: 1s;
+}
+main ul {
+    list-style: none;
+}
+
+main ul li {
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+main ul li a {
+    text-decoration: none;
+    font: 900 28px/170% Cinzel, serif;
+    letter-spacing: 2px;
+    color: rgb(var(--color-white));
+}
+
+footer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+footer .pancake .box {
+    margin: 0 4px;
+}
+
+footer .pancake .content {
+    background-color: rgba(var(--color-white), 0.6);
+    box-sizing: border-box;
+    padding: 8px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    aspect-ratio: 1 / 1;
+}
+
+footer .pancake .content img {
+    max-height: 18px;
+    aspect-ratio: 1 / 1;
+}
+
+p.btn-custom {
+    background-color: var(--color-black);
+}
+
+p.btn-book {
+    background-color: var(--color-accent);
+}
+
+p:is(.btn-custom, .btn-book) {
+    box-sizing: border-box;
+    padding: 10px 5px;
+    border-radius: 25px;
+    text-align: center;
+    max-width: 200px;
+}
+
+p:is(.btn-custom, .btn-book) a {
+    text-decoration: none;
+    color: rgb(var(--color-white));
+    font-weight: 500;
+}

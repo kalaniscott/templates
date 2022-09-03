@@ -1,0 +1,53 @@
+:root {
+    --flex-basis: 300px
+}
+
+.centered {
+    display: grid;
+    place-items: center;
+}
+
+.pancake {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.pancake.center {
+    align-items: center;
+}
+
+.pancake.stretch {
+    align-items: stretch;
+}
+
+.pancake .box {
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+}
+
+/* Animations */
+
+.fade-in {
+    animation: fadeIn 3.5s forwards;
+    opacity: 0;
+}
+
+.slide-in {
+    position: relative;
+    animation: slideIn 3s forwards;
+    right: 100vw;
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    100% {
+        right: 0%;
+    }
+}

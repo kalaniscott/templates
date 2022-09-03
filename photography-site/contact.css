@@ -1,0 +1,28 @@
+body {
+    background-image: none;
+}
+main {
+    padding: 0;
+    margin: 33vh 0 0;
+    max-width: 100%;
+    width: 940px;
+}
+
+main .pancake {
+    flex-flow: row;
+}
+
+main .pancake img {
+    flex: 0 1 300px;
+}
+
+main .pancake .box {
+    flex: 1 1 300px;
+    place-items: center;
+    background-color: rgba(var(--color-white), 0.6);
+}
+
+h1 {
+    animation-delay: 4s;
+    animation-duration: 3s;
+}
